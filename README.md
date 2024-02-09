@@ -20,3 +20,30 @@ The server is configured with environment variables. There are two options:
 ## Contributors
 
 Originally written by @pvh.
+
+## Docker
+
+build it:
+
+```bash
+docker build -t automerge-repo-sync-server .
+```
+
+run it:
+
+```bash
+docker run -d automerge-repo-sync-server
+```
+
+run from GH without building locally:
+
+```bash
+docker run -d --name syncserver -p 3030:3030 ghcr.io/heckj/automerge-repo-sync-server:mainn
+```
+
+cleanup after:
+
+```bash
+docker stop syncserver
+docker rm syncserver
+```

@@ -7,6 +7,9 @@ import { NodeWSServerAdapter } from "@automerge/automerge-repo-network-websocket
 import { NodeFSStorageAdapter } from "@automerge/automerge-repo-storage-nodefs"
 import os from "os"
 
+import { next as Automerge } from "@automerge/automerge"
+import { cbor } from "@automerge/automerge-repo"
+
 export class Server {
   /** @type WebSocketServer */
   #socket
@@ -61,6 +64,10 @@ export class Server {
 
     this.#server.on("upgrade", (request, socket, head) => {
       this.#socket.handleUpgrade(request, socket, head, (socket) => {
+        socket.on("message", (msg) => {
+          const message = cbor.decode(msg)
+          console.log(`Received CBOR message: ${msg}`)
+        })
         this.#socket.emit("connection", socket, request)
       })
     })

@@ -2,30 +2,32 @@
 # yarn lockfile v1
 
 
-"@automerge/automerge-repo-network-websocket@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@automerge/automerge-repo-network-websocket/-/automerge-repo-network-websocket-1.0.13.tgz#659d571334323e8505f548e50bcae48f02967de7"
-  integrity sha512-Vq2KzVLcGk4FzxWGbFVR+nJC1LXnqCZhPpIkuRsJx6Dla9RG+Y4S3+pCv6nvmNtrNgPBUvFtsPa9ixzZXvQK/Q==
+"@automerge/automerge-repo-network-websocket@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge-repo-network-websocket/-/automerge-repo-network-websocket-1.1.5.tgz#94410831e6a10a7ccb3b4b529de4728e7ccbf629"
+  integrity sha512-RYnN9h71zSCaqZBDnFdO4gcS5XgC1yvFUpwEgeUllL8jHlhDeCetdQR8JjUFttxRoxqRrJyd2TfH7K7tJjkXBQ==
   dependencies:
-    "@automerge/automerge-repo" "^1.0.13"
+    "@automerge/automerge-repo" "1.1.5"
     cbor-x "^1.3.0"
+    debug "^4.3.4"
     eventemitter3 "^5.0.1"
     isomorphic-ws "^5.0.0"
     ws "^8.7.0"
 
-"@automerge/automerge-repo-storage-nodefs@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@automerge/automerge-repo-storage-nodefs/-/automerge-repo-storage-nodefs-1.0.13.tgz#642993207fc2e89b19a032f973f901a5eb4fadd7"
-  integrity sha512-Tco72Wm29VmmPXCo5nnyHh2eqtGxl7YZlDBHCJ1iKKy21/J9rUM7pVNw0ozd1rRF6GodcbOo62wcnj6bbDZf1w==
+"@automerge/automerge-repo-storage-nodefs@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge-repo-storage-nodefs/-/automerge-repo-storage-nodefs-1.1.5.tgz#1a740aa5adb83b1307c36019414878e724eb3cec"
+  integrity sha512-mk1S74L4LRFJ9EE9KbIZg9VYOB2Z7Y51f0zmklbN2Hy11AN9K2rvHwBCcm4L8WAWJOIk13uVN+cm8jIbGEHg0g==
   dependencies:
-    "@automerge/automerge-repo" "^1.0.13"
+    "@automerge/automerge-repo" "1.1.5"
     rimraf "^5.0.1"
 
-"@automerge/automerge-repo@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@automerge/automerge-repo/-/automerge-repo-1.0.13.tgz#91080358e17fb4320d546828d774592f2f116199"
-  integrity sha512-QHS/EJUFWQst19vEQjKBpiS+NVXrm7u5Me1bQ7GMlHQIB1NemtgKpucfdPtR5m9XQO6g9vuRif0FEbLWi1DTvw==
+"@automerge/automerge-repo@1.1.5", "@automerge/automerge-repo@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge-repo/-/automerge-repo-1.1.5.tgz#2fb32b11e6da19ac1720cdbf787114a6d7eac78d"
+  integrity sha512-SwXWwkasugfdGwQy4RuS/pn2FrI+YDtzrwvUbXkLVRiX83Zt3UQBXlL+QW+5QbH7uQ2mK0l3rOkRlQwnsYHUNg==
   dependencies:
+    "@automerge/automerge" "^2.1.9"
     bs58check "^3.0.1"
     cbor-x "^1.3.0"
     debug "^4.3.4"
@@ -36,17 +38,30 @@
     uuid "^9.0.0"
     xstate "^4.37.0"
 
-"@automerge/automerge-wasm@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@automerge/automerge-wasm/-/automerge-wasm-0.4.0.tgz#46dd61b9f8217e6630f93bbbf76b05394de38303"
-  integrity sha512-wha+es3KaQkSrLJ+DiOjvCxtTHyXbsSJFWGui05GkI7/GffOhMVEOGVa48j1GzHcM+0R7Jv/TkUDwdV9ptNnCA==
+"@automerge/automerge-wasm@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge-wasm/-/automerge-wasm-0.12.0.tgz#d921ae6c168cf3186ad17b961a7718d0d1b213c2"
+  integrity sha512-MJVmw/83Uy7WuqA9Dac3VcLXpXENZSDu7hqxttdFyAYZXQYQugiU7R+RUO2sP7081J9gRUb2+73sYpNnSTwzYQ==
 
-"@automerge/automerge@^2.1.6":
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/@automerge/automerge/-/automerge-2.1.6.tgz#0bef6a550328ee92e1c86dd75766175410082dfa"
-  integrity sha512-XiOqW+acAk11nBn1Lam1Pu8xvTCTb/tJhgVWu2Ruf13iAPdzXsfa30I4+dfDBsUbLOSW9eQCa6RQ2tS7AXyUjA==
+"@automerge/automerge-wasm@0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge-wasm/-/automerge-wasm-0.9.0.tgz#1b0e1ea595feeb47ea0f4b685bf2ffb7fa61f97c"
+  integrity sha512-wTPcW3wVk20D1x0DOko/RsfZV1mlc8HJynqgTRhVocOxFIU/RCilnYRfJmSb8LwCG2uZzfqg0DLsEBqQZ53KBQ==
+
+"@automerge/automerge@^2.1.13":
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge/-/automerge-2.1.13.tgz#53fc1597eb92e227be87a6a5bbb9fe8648241fd3"
+  integrity sha512-9t185MgkFvwvqccmA45yKq61If2KCpKxZg19gukwO9G15bvxuh5ulWv2PWvMZ+iTvhDYCH+pZwXmFkD4nufScw==
   dependencies:
-    "@automerge/automerge-wasm" "^0.4.0"
+    "@automerge/automerge-wasm" "0.12.0"
+    uuid "^9.0.0"
+
+"@automerge/automerge@^2.1.9":
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/@automerge/automerge/-/automerge-2.1.10.tgz#257f9f94c37db088008548cca7e57e853d1ed354"
+  integrity sha512-xj8R3fQHZmDYnrYW5WrBqWm/r5sLV9Z7mu89pJ10wGLVS2V+iAB2os85DoOGI2etzjmQsoHyrd97GBmszjH4zQ==
+  dependencies:
+    "@automerge/automerge-wasm" "0.9.0"
     uuid "^9.0.0"
 
 "@cbor-extract/cbor-extract-darwin-arm64@2.1.1":
