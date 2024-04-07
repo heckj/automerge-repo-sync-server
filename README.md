@@ -17,28 +17,12 @@ The server is configured with environment variables. There are two options:
 - `PORT` - the port to listen for websocket connections on
 - `DATA_DIR` - the directory to store saved documents in
 
-## Contributors
+## Running in Docker
 
-Originally written by @pvh.
-
-## Docker
-
-build it:
+Run in docker using image hosted by GitHub container registry:
 
 ```bash
-docker build -t automerge-repo-sync-server .
-```
-
-run it:
-
-```bash
-docker run -d automerge-repo-sync-server
-```
-
-run from GH without building locally:
-
-```bash
-docker run -d --name syncserver -p 3030:3030 ghcr.io/heckj/automerge-repo-sync-server:mainn
+docker run -d --name syncserver -p 3030:3030 ghcr.io/automerge/automerge-repo-sync-server:main
 ```
 
 cleanup after:
@@ -47,3 +31,7 @@ cleanup after:
 docker stop syncserver
 docker rm syncserver
 ```
+
+## Contributors
+
+Originally written by @pvh.
