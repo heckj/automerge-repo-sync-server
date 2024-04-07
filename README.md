@@ -20,3 +20,17 @@ The server is configured with environment variables. There are two options:
 ## Contributors
 
 Originally written by @pvh.
+
+## Docker
+
+build it:
+
+```bash
+docker build -t automerge-repo-sync-server .
+```
+
+run it:
+
+```bash
+docker run -d automerge-repo-sync-server
+```

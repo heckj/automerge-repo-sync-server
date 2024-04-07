@@ -1,6 +1,11 @@
 # syntax=docker/dockerfile:1.4
+LABEL org.opencontainers.image.source=https://github.com/heckj/automerge-repo-sync-server
+LABEL org.opencontainers.image.description="A debugging/test instance of automerge-repo-sync-server"
+LABEL org.opencontainers.image.licenses=MIT
 
-FROM node:lts AS development
+# https://docs.github.com/en/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions
+
+FROM node:lts-slim AS development
  
 # Create app directory
 WORKDIR /usr/src/app
@@ -31,5 +36,6 @@ EOF
 HEALTHCHECK CMD curl --fail http://localhost:3030 || exit 1  
 
 # install Docker tools (cli, buildx, compose)
-COPY --from=gloursdocker/docker / /
+# COPY --from=gloursdocker/docker / /
+
 CMD [ "node", "./src/index.js" ]
